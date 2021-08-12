@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>Profile Management</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>MY PROFILE</b></h1>
+    <h6>Welcome to the Profile of <span class="w3-tag"> Mr Adarsh</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="wt1.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">WELCOME TO</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>PROFILE MANAGEMENT SYSTEM </b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- profile entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PMS</h3>
+          <h5>Profile Management <span class="w3-opacity">July, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="wt2.jpg" alt="" style="width:50%" class="w3-padding-16">
+          <p><strong>hello !</strong> Employee Profile Management System project is developed using PHP, CSS, HTML, and JavaScript. Talking about the project, it has all the essential features required for the management of school employees faculty. This project contains only the admin’s side where he/she can add, edit, delete, view, search subjects and their respective teachers for the system. The Admin plays the main role in the management of the system. In this project, all the main functions are performed from the Admin side.</p>
+          <p></p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Sumit <span class="w3-opacity w3-medium">May 3, 2021, 6:32 PM</span></h4>
+                <p>Great profile ! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PMS</h3>
+          <h5>Profile Management, <span class="w3-opacity">july 23, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="wt3.png" alt="Men in Hats" style="width:50%" class="w3-padding-16">
+          <p><strong>Cloud Computing!</strong> While Cloud Computing in itself is an IT skill, yet it still stands at crossroads with other IT skills such as AI and IoT!</p>
+          <p>As an enabler, Cloud Computing has helped create multiple channels of revenue by leveraging technologies like AI and IoT but also in assisting data analytics, cybersecurity and networking.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amit <span class="w3-opacity w3-medium">April 26, 2021, 10:52 PM</span></h4>
+                <p>absolutely right !!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>raj <span class="w3-opacity w3-medium">April 23, 2021, 9:12 PM</span></h4>
+                <p>agreee with you!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PMS</h3>
+          <h5>Profile Management <span class="w3-opacity">Augest 7, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="wt6.jpg" alt="Data Science & Data Analytics" style="width:50%" class="w3-padding-16">
+          <p><strong>Data Science & Data Analytics!</strong> Data is one of the most important aspects of the IT industry. The data is needed to be captured and analyzed for better understanding of the industry and market trends.</p>
+          <p>Data Analysts are always in high demand as almost every organization needs someone who can gather, store and manage data.Data Scientists are needed to dig in the data and help companies make informed decisions.According to the IDC (International Data Corporation), the world will create and replicate over 163 Zettabytes of data by 2025 which is 10 times what it was in 2016.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Bahubali <span class="w3-opacity w3-medium">April 10, 2021, 7:22 PM</span></h4>
+                <p>That was a great thought! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Kattapa <span class="w3-opacity w3-medium">Augest 8, 2021, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!!</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                              </div>
+              <div class="w3-col l10 m9">
+                <h4> Devasena <span class="w3-opacity w3-medium">july 7, 2021, 9:12 PM</span></h4>
+                <p>Cant wait to work with you!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        
+        <div class="w3-container w3-black">
+          <h4>Developed By</h4>
+          <p>Adarsh, myself and I, exploring the universe of uknownment.. I would love to share my profile  with you.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            
+            <span class="w3-large"> Information technology specialist</span>
+            <br>
+            <span>Problem-solving information technology specialist with six years of experience using operating and security software for various technology companies</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large"> Administrative assistant</span>
+            <br>
+            <span>Highly-trained and motivated administrative assistant with over seven years of experience providing clerical support to three executive professionals.</span>
+          </li>
+          <li class="w3-padding-16">
+           
+            <span class="w3-large">Custodian</span>
+            <br>
+            <span>Self-sufficient and organized custodian with over nine years of experience cleaning and providing maintenance to the upkeep of hospitals and clinics</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large">Accountant</span>
+            <br>
+            <span>A highly motivated accounting specialist with over three years of experience assisting advisors in the private practice industry. Advanced knowledge of building efficient financial reports, managing and planning tax duties for government entities and forecasting upcoming budgetary needs. </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Your AD Here</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Trending technologies</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">AI & Machine Learning</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cloud Computing
+            </span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Science & Data Analytics</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programming</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cyber Security</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mobile App Development</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+     
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest update of this rofile.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest update.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.linkedin.com/in/adarsh-thakur-a573221a8" target="_blank">Mr. Adarsh</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
